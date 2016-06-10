@@ -1,0 +1,95 @@
+#include <string>
+#include <ctime>
+
+using namespace std;
+
+void imprimir_espacos(int total);
+
+int main(int argc, char* args[])
+{
+	bool sair = false; 
+	string jog1; 
+	string jog2; 
+	int rodada = 0, rodada2 = 0; 
+	int total_espacos = 10; 
+
+\\ SALVANDO E IMPRIMINDO O NOME DOS DOIS JOGADORES
+	cout << "Digite o nome do jogador 1:" << endl; 
+	cin >> jog1; 
+	cout << "Digite o nome do jogador 2:" << endl; 
+	cin >> jog2;
+
+	\\ UM LAÇO ONDE SAIR RECEBE FALSE
+	while (sair == false)
+	{
+
+		srand((int)time(0)); 
+		total_espacos = rand() % 3 + 1; 
+		rodada = rodada + total_espacos;  
+		
+	\\IMPRIMINDO NA TELA OS DADOS DA SAIDA DO JOGADOR 1 OS ESPAÇOS PERCORRIDOS
+		cout << "PARTIDA"                                                                     LINHA DE CHAGADA" << endl;
+		cout << "jogador " << jog1 << endl;
+		imprimir_espacos(rodada);  
+		cout << "   _  " << endl;
+		imprimir_espacos(rodada);
+		cout << " o=o> " << endl;
+		cout << "_               _" << endl;
+		
+		 
+		srand((int)time(0));
+		total_espacos = rand() % 3 + 1;
+		rodada2 = rodada2 + total_espacos;
+		
+		IMPRIMINDO NA TELA OS DADOS DA SAIDA DO JOGADOR 2 OS ESPAÇOS PERCORRIDOS
+		cout << "PARTIDA"                                                                      LINHA DE CHAGADA" << endl;
+		cout << "jogador " << jog2 << endl;
+		imprimir_espacos(rodada2);
+		cout << "   _  " << endl;
+		imprimir_espacos(rodada2);
+		cout << " o=o> " << endl;
+		cout << "_               _" << endl;
+\\PARA CONTINUAR A JOGAR IMPRIME NA TELA PEDINDO PARA VOCÊ APERTAR ENTER
+		cout << "proxima jogada ? (Digite enter)" << endl;  
+		
+
+		system("pause");
+		
+		system("cls"); 
+		
+\\SE A PRIMEIRA E A SEGUNDA RODADA FOR MAIOR OU IGUAL A VINTE VERDADEIRO
+\\SE NÃO FALSO
+		if (rodada >= 20 || rodada2 >= 20) 
+		{
+			sair = true; 
+		}
+		else 
+		
+			system("cls");  
+		
+
+	
+	}
+	\\PRIMEIRA RODADA SERÁ DE VINTE ESPAÇOS 
+	if (rodada = 20)  
+		cout << mjog1 << "chegou em primeiro " << endl;
+	
+	else if (rodada2 = 20)  
+		cout << mot2 << "chegou em primeiro " << endl;
+	
+	else 
+		cout << "OS DOIS GANHARAM" << endl; 
+	
+	
+	system("pause"); 
+	return 0;
+}
+
+void imprimir_espacos(int total)
+{
+	for (int qntd_atual = 0; qntd_atual < total; qntd_atual++) 
+
+	{
+		cout << " ";
+	}
+}
