@@ -101,15 +101,15 @@ int main()
 			QUESTÃO 3. Conserte a linha abaixo para gerar um número aleatório que comece em atq_tie (o valor de ataque 
 			do tie fighter)	e vá até 10.
 		*/
-		dano = rand() % 30 + atq_tie;
+		dano = rand() % 10 + atq_tie;
 		dano = dano - def_xwing;
 		if (dano < 0) dano = 0;
 		cout << "Tie-Fighter causa " << dano << " de dano na X-Wing." << endl;
 		vida_xwing -= dano;
 
 		cout << endl;
-		cout << "X-Wing ataca com Ataque " << atq_tie << " contra defesa " << def_xwing << " do Tie-Fighter." << endl;
-		dano = rand() % 30 + atq_xwing;
+		cout << "X-Wing ataca com Ataque " << atq_xwing << " contra defesa " << def_tie << " do Tie-Fighter." << endl;
+		dano = rand() % 10 + atq_xwing;
 		dano = dano - def_tie;
 		if (dano < 0) dano = 0;
 		cout << "X-Wing causa " << dano << " de dano no Tie-Fighter." << endl;

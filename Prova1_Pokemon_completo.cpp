@@ -60,20 +60,13 @@ int main()
 	cout << "                        88" << endl;
 	cout << "                        88" << endl;
 	cout << "                        88" << endl;
-	cout << "8b,dPPYba,   ,adPPYba,  88   ,d8  ,adPPYba, 88,dPYba,,adPYba," << endl;
-	cout << "88P'     8a a8       8a 88 ,a8   a8P_____88 88P'    88      8a" << endl;
-	cout << "88       d8 8b       d8 8888[    8PP'''''   88      88      88" << endl;
-	cout << "88b,   ,a8  `8a,   ,a8  88` Yba,  8b,   ,aa 88      88      88" << endl;
-	cout << "88`YbbdP'     `YbbdP'   88   `Y8a  `Ybbd8'  88      88      88" << endl;
+	cout << "8b,dPPYba,   ,adPPYba,  88   ,d8  ,adPPYba, 88,dPYba,,adPYba,   ,adPPYba,  8b,dPPYba," << endl;
+	cout << "88P'     8a a8       8a 88 ,a8   a8P_____88 88P'    88      8a a8       8a 88P'    `8a" << endl;
+	cout << "88       d8 8b       d8 8888[    8PP'''''   88      88      88 8b       d8 88       88" << endl;
+	cout << "88b,   ,a8  `8a,   ,a8  88` Yba,  8b,   ,aa 88      88      88 `8a,   ,a8  88       88" << endl;
+	cout << "88`YbbdP'     `YbbdP'   88   `Y8a  `Ybbd8'  88      88      88   `YbbdP'   88       88" << endl;
 	cout << "88" << endl;
 	cout << "88" << endl;
-
-	cout << "  ,adPPYba,  8b,dPPYba," << endl;
-	cout << " a8       8a 88P'    `8a" << endl;
-	cout << " 8b       d8 88       88" << endl;
-	cout << " `8a,   ,a8  88       88" << endl;
-	cout << "   `YbbdP'   88       88" << endl;
-
 	cout << endl << endl;
 
 	system("pause");
@@ -119,7 +112,7 @@ int main()
 
 			Dica: Como faço para ler uma variável digitada pelo usuário?
 		*/
-		// Coloque o código aqui!
+		cin >> opcao;
 
 		// Aumenta os atributos de acordo com a opção selecionada pelo usuário.
 		if (opcao == 1)	resistencia++;
@@ -132,7 +125,7 @@ int main()
 			Dica: Como faço para somar um valor na variável "vida"?
 			Dica: Sei como fazer isso? Então devo somar o dobro da Resistência.
 		*/
-		// Coloque o código aqui!
+		vida = vida + (resistencia * 2);	// Os parênteses são opcionais (pois a * é feita primeiro)
 
 		/*
 			----- QUESTÃO 4. Complete o condicional abaixo. -----
@@ -148,7 +141,8 @@ int main()
 			Dica: Coloque o código onde se pede!
 		*/
 		if (vida >= 12 && vida <= 16) nivel = "Treinando";
-		// Coloque o código aqui!
+		else if (vida > 16 && vida <= 22) nivel = "Forte"; // Também pode ser (vida >= 17 && vida <= 22)
+		else if (vida > 22) nivel = "Muito Forte";
 
 		/*
 			----- QUESTÃO 5. Faça um laço para repetir as instruções abaixo 3 (três) vezes. -----
@@ -157,11 +151,13 @@ int main()
 			Dica: Sei como repetir um comando? Da mesma forma repetimos mais de um, basta colocar tudo junto no laço.
 			Dica: Lembre-se de usar o { } corretamente.
 		*/
-		// Coloque o código aqui!
+		for (int cont = 0; cont < 3; cont++)
+		{
 			cout << "Pikachu esta testando seus ataques." << endl;
 			dano = rand() % 20 + 1;
 			dano = dano * forca;
 			cout << "Pikachu causa " << dano << " de dano." << endl;
+		}
 
 		cout << endl;
 		system("pause");
@@ -171,7 +167,7 @@ int main()
 			----- QUESTÃO 6. Adicione um condicional para encerrar o jogo quando o 
 							 "nivel" do personagem for "Muito Forte". -----
 		*/
-		// Coloque o código aqui!
+		if (nivel == "Muito Forte") sair = true;
 	}
 	
 	cout << endl << endl;

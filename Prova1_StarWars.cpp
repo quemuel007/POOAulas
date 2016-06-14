@@ -1,6 +1,6 @@
 /*
-	Prova de ProgramaÁ„o Orientada a Objetos (POO)
-	Curso TÈcnico em Prog. de Jogos Digitais
+	Prova de Programa√ß√£o Orientada a Objetos (POO)
+	Curso T√©cnico em Prog. de Jogos Digitais
  
 	Prof. Marcelo de Barros			IFRN - 14/06/2016
   
@@ -17,24 +17,24 @@
 #include <ctime>
 using namespace std;
 
-// FunÁ„o para mostrar a tela de FIM DE JOGO.
+// Fun√ß√£o para mostrar a tela de FIM DE JOGO.
 void fim();
 
 /*
-	Leia atentamente as instruÁıes.
-	Responda a prova em silÍncio.
+	Leia atentamente as instru√ß√µes.
+	Responda a prova em sil√™ncio.
 
-	InstruÁıes:
+	Instru√ß√µes:
 
-		O cÛdigo est· incompleto! 
+		O c√≥digo est√° incompleto! 
 
 	1. Leia a prova de cabo a rabo.
-	2. Entenda o que o cÛdigo faz. Execute para ter uma ideia do que est· feito atÈ o momento.
-	3. Preencha os coment·rios nas ----- QUEST’ES ----- com o cÛdigo que est· faltando.
+	2. Entenda o que o c√≥digo faz. Execute para ter uma ideia do que est√° feito at√© o momento.
+	3. Preencha os coment√°rios nas ----- QUEST√ïES ----- com o c√≥digo que est√° faltando.
     4. Teste!
     5. Repita 3 e 4.
 
-	Se necess·rio, use uma folha para lhe auxiliar! Copie o nome das vari·veis e seus valores.
+	Se necess√°rio, use uma folha para lhe auxiliar! Copie o nome das vari√°veis e seus valores.
 
 	Boa sorte!
 
@@ -42,20 +42,20 @@ void fim();
 int main()
 {
 	/*
-		----- QUEST√O 1. Imprima 5 (cinco) linhas utilizando um laÁo for. -----
+		----- QUEST√ÉO 1. Imprima 5 (cinco) linhas utilizando um la√ßo for. -----
 		
 		Dica: Como eu imprimo uma linha?
 		Dica: Sei como imprimir uma linha? Se sim, repito isso 5 (cinco) vezes!
-		Dica: N„o vale fazer cout << endl << endl << endl << endl << endl;
+		Dica: N√£o vale fazer cout << endl << endl << endl << endl << endl;
 	*/
-	// Coloque o cÛdigo aqui!
+	// Coloque o c√≥digo aqui!
 	cout << "		A long time ago in a galaxy far," << endl;
 	cout << "		far away...." << endl;
 
 	/*
-		----- QUEST√O 1. Repita o cÛdigo da Quest„o 1 aqui. -----
+		----- QUEST√ÉO 1. Repita o c√≥digo da Quest√£o 1 aqui. -----
 	*/
-	// Coloque o cÛdigo aqui!
+	// Coloque o c√≥digo aqui!
 	system("pause");
 	system("cls");
 
@@ -67,17 +67,17 @@ int main()
 	cout << "	 88888888  88 88     88 88    888888" << endl;
 	cout << endl;
 	/*
-		----- QUEST√O 2. Um programador, por acidente, deu espaÁos a mais no comeÁo dos seus "cout". 
-		Remova os espaÁos desnecess·rios, de modo que forme a palavra "WARS" corretamente na tela. -----
+		----- QUEST√ÉO 2. Um programador, por acidente, deu espa√ßos a mais no come√ßo dos seus "cout". 
+		Remova os espa√ßos desnecess√°rios, de modo que forme a palavra "WARS" corretamente na tela. -----
 		
-		Dica: Na tela do editor, o texto deve ficar igual ao que vocÍ deseja mostrar na tela do programa!
-		Dica: N„o mexa nas linhas marcadas! Elas j· est„o na posiÁ„o correta.
+		Dica: Na tela do editor, o texto deve ficar igual ao que voc√™ deseja mostrar na tela do programa!
+		Dica: N√£o mexa nas linhas marcadas! Elas j√° est√£o na posi√ß√£o correta.
 	*/
-	cout << "	 88  88  88   888    88888    888888" << endl;	// N„o mexa nessa linha.
+	cout << "	 88  88  88   888    88888    888888" << endl;	// N√£o mexa nessa linha.
 	cout << "			 88  88  88  88 88   88  88  88" << endl;
 	cout << "						88 8888 88 88   88  88888    8888" << endl;
 	cout << "					888  888 888888888 88   88     88" << endl;
-	cout << "	   88  88  88     88 88    8888888" << endl;	// N„o mexa nessa linha.
+	cout << "	   88  88  88     88 88    8888888" << endl;	// N√£o mexa nessa linha.
 
 	cout << endl << endl;
 	system("pause");
@@ -87,7 +87,7 @@ int main()
 
 	/*
 		O jogo possui duas naves: a Tie-Fighter e a X-Wing.
-		Ambas comeÁam com 40 de vida!
+		Ambas come√ßam com 40 de vida!
 
 		A Tie-Fighter tem Ataque 2 e Defesa 3.
 		A X-Wing	  tem Ataque 1 e Defesa 4.
@@ -98,41 +98,41 @@ int main()
 	
 	/*
 		Ambas as naves iniciam o jogo com estado "Inteiro",
-		pois ainda n„o foram atacadas e est„o intactas.
+		pois ainda n√£o foram atacadas e est√£o intactas.
 	*/
 	string estado_tie = "Inteiro";
 	string estado_xwing = "Inteiro";
 
-	// Vari·vel que ser· usada para calcular o dano nas naves.
+	// Vari√°vel que ser√° usada para calcular o dano nas naves.
 	int dano;
 
 	srand((int)time(0));
 
-	// Enquanto n„o pedirmos para sair. Execute o jogo!
+	// Enquanto n√£o pedirmos para sair. Execute o jogo!
 	while (!sair)
 	{
 		cout << endl;
 		cout << "Tie-Fighter ataca com Ataque " << atq_tie << " contra defesa " << def_xwing << " da X-Wing." << endl;
 		/*
-			----- QUEST√O 3. Conserte a linha abaixo para gerar um n˙mero aleatÛrio que comece em "atq_tie" e v· atÈ 10. -----
+			----- QUEST√ÉO 3. Conserte a linha abaixo para gerar um n√∫mero aleat√≥rio que comece em "atq_tie" e v√° at√© 10. -----
 
-			Dica: Do jeito que est·, o n˙mero gerado estar· em qual intervalo?
+			Dica: Do jeito que est√°, o n√∫mero gerado estar√° em qual intervalo?
 		*/
 		dano = rand() % 30 + 1;
-		// Subtrai a defesa da nave inimiga do dano causado. A defesa serve como uma proteÁ„o, diminuindo o dano.
+		// Subtrai a defesa da nave inimiga do dano causado. A defesa serve como uma prote√ß√£o, diminuindo o dano.
 		dano = dano - def_xwing;
-		// O dano n„o pode ser negativo! Se o dano for menor do que zero (ou seja, negativo), ent„o transforme esse dano em 0 (zero)!
+		// O dano n√£o pode ser negativo! Se o dano for menor do que zero (ou seja, negativo), ent√£o transforme esse dano em 0 (zero)!
 		if (dano < 0) dano = 0;
 		cout << "Tie-Fighter causa " << dano << " de dano na X-Wing." << endl;
-		// Causa o dano na Nave advers·ria. Por exemplo, a vida dela que era 40 agora ser· (40 - dano). 
+		// Causa o dano na Nave advers√°ria. Por exemplo, a vida dela que era 40 agora ser√° (40 - dano). 
 		vida_xwing = vida_xwing - dano;
 
 		cout << endl;
-		cout << "X-Wing ataca com Ataque " << atq_tie << " contra defesa " << def_xwing << " do Tie-Fighter." << endl;
+		cout << "X-Wing ataca com Ataque " << atq_xwing << " contra defesa " << def_tie << " do Tie-Fighter." << endl;
 		/*
-			----- QUEST√O 3. Repita a alteraÁ„o da Quest„o 3 tambÈm na linha abaixo. -----
+			----- QUEST√ÉO 3. Repita a altera√ß√£o da Quest√£o 3 tamb√©m na linha abaixo. -----
 
-			ATEN«√O: Dessa vez utilize "atq_xwing" ao invÈs de "atq_tie", pois agora quem ataca È a X-Wing!
+			ATEN√á√ÉO: Dessa vez utilize "atq_xwing" ao inv√©s de "atq_tie", pois agora quem ataca √© a X-Wing!
 		*/
 		dano = rand() % 30 + 1;
 		dano = dano - def_tie;
@@ -141,7 +141,7 @@ int main()
 		vida_tie = vida_tie - dano;
 
 		/*
-			----- QUEST√O 4. Complete os condicionais abaixo. -----
+			----- QUEST√ÉO 4. Complete os condicionais abaixo. -----
 			
 			Deve mudar o estado da nave de acordo com a seguinte tabela:
 			Vida				Estado
@@ -151,20 +151,20 @@ int main()
 			entre 1 e 10		"Estado Critico"
 			0 ou menos			"Destruida"
 
-			Complete com os que est„o faltando.
+			Complete com os que est√£o faltando.
 
-			Dica: Coloque o cÛdigo onde se pede!
+			Dica: Coloque o c√≥digo onde se pede!
 		*/
 		if (vida_xwing > 30 && vida_xwing < 40) estado_xwing = "Danos na Nave";
 		else if (vida_xwing > 20) estado_xwing = "Nave Avariada";
-		// Coloque o cÛdigo aqui!
+		// Coloque o c√≥digo aqui!
 		
 		/*
-			----- QUEST√O 4. FaÁa o mesmo para a outra nave. -----
+			----- QUEST√ÉO 4. Fa√ßa o mesmo para a outra nave. -----
 		*/
 		if (vida_tie > 30 && vida_tie < 40) estado_tie = "Danos na Nave";
 		else if (vida_tie > 20) estado_tie = "Nave Avariada";
-		// Coloque o cÛdigo aqui!
+		// Coloque o c√≥digo aqui!
 
 
 		cout << "	        			*       *" << endl;
@@ -182,23 +182,23 @@ int main()
 		system("cls");
 
 		/*
-			----- QUEST√O 5. Adicione um condicional para encerrar o jogo quando uma 
+			----- QUEST√ÉO 5. Adicione um condicional para encerrar o jogo quando uma 
 							 das duas naves chegar em 0 (zero) ou menos de vida. -----
 		*/
-		// Coloque o cÛdigo aqui!
+		// Coloque o c√≥digo aqui!
 	}
 
 	/*
-		----- QUEST√O 6. Adicione um comando para ativar a funÁ„o "fim". -----
+		----- QUEST√ÉO 6. Adicione um comando para ativar a fun√ß√£o "fim". -----
 
-		Dica: Como eu faÁo para ativar um super-poder (funÁ„o)?
+		Dica: Como eu fa√ßo para ativar um super-poder (fun√ß√£o)?
 	*/
-	// Coloque o cÛdigo aqui!
+	// Coloque o c√≥digo aqui!
 
 	return 0;
 }
 
-// FunÁ„o respons·vel por mostrar a tela de Fim de Jogo.
+// Fun√ß√£o respons√°vel por mostrar a tela de Fim de Jogo.
 void fim()
 {
 	cout << "		FIM DE JOGO " << endl;
@@ -211,13 +211,27 @@ void fim()
 	cout << "   \\::::/:\\::::/   `--' \\::::/:\\::::/" << endl;
 	cout << "    \\::/:::\\::/          \\::/:::\\::/" << endl;
 	cout << "     \\/:::::\\/            \\/:::::\\/" << endl;
-	cout << "      \"\"\"\"\"\"               \"\"\"\"\"\"" << endl;
+	cout << "      \"\"\"\"\"\"               \"\"\"\"\"\"" << endl
+
+
+	cout << endl << endl;
+	cout << "             _" << endl                             
+	cout << "            | |" << endl                             
+	cout << " _ __   ___ | | _____ _ __ ___   ___  _ __" << endl  
+	cout << "| '_ \\ / _ \\| |/ / _ \\ '_ ` _ \\ / _ \\| '_ \\" << endl 
+	cout << "| |_) | (_) |   <  __/ | | | | | (_) | | | |" << endl
+	cout << "| .__/ \\___/|_|\\_\\___|_| |_| |_|\\___/|_| |_|" << endl
+	cout << "| |" << endl                                         
+	cout << "|_|" << endl   
+	cout << endl << endl;                             
+
+
 }
 
 
 
 
 /*
-	CÛdigo por https://github.com/marcelomesmo/POOAulas
+	C√≥digo por https://github.com/marcelomesmo/POOAulas
 	Desenhos ASCII retirados de http://www.asciimation.co.nz
 */
