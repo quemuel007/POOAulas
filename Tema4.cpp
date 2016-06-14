@@ -66,6 +66,8 @@ int main()
 			 qnt_moedas_tira == 4
 			// ------ ESSA CONDIÇÃO POSSUI ALGUM PROBLEMA? VERIFIQUE! -----
 			// Teste o programa depois de feito e veja se tem algum erro!
+			// Dica: Quando tiver apenas 2 (duas) moedas, tente retirar 4 (quatro)!
+			// Pergunta: O jogador pode fazer isso??
 			)
 		{
 			// ------ RETIRAR AS MOEDAS ------
