@@ -14,6 +14,7 @@
  */
 #include <iostream>
 #include <string>
+#include <stdlib.h>
 #include <ctime>
 using namespace std;
 
@@ -212,20 +213,6 @@ void fim()
 	cout << "    \\::/:::\\::/          \\::/:::\\::/" << endl;
 	cout << "     \\/:::::\\/            \\/:::::\\/" << endl;
 	cout << "      \"\"\"\"\"\"               \"\"\"\"\"\"" << endl
-
-
-	cout << endl << endl;
-	cout << "             _" << endl                             
-	cout << "            | |" << endl                             
-	cout << " _ __   ___ | | _____ _ __ ___   ___  _ __" << endl  
-	cout << "| '_ \\ / _ \\| |/ / _ \\ '_ ` _ \\ / _ \\| '_ \\" << endl 
-	cout << "| |_) | (_) |   <  __/ | | | | | (_) | | | |" << endl
-	cout << "| .__/ \\___/|_|\\_\\___|_| |_| |_|\\___/|_| |_|" << endl
-	cout << "| |" << endl                                         
-	cout << "|_|" << endl   
-	cout << endl << endl;                             
-
-
 }
 
 

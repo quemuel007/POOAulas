@@ -9,6 +9,7 @@
  */
 #include <iostream>
 #include <string>
+#include <stdlib.h>
 #include <ctime>
 using namespace std;
 
